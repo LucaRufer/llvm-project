@@ -385,4 +385,7 @@ def SEED : SysReg<"seed", 0x015>;
 let FeaturesRequired = [{ {RISCV::FeatureExtXmempool} }] in {
 def TRACE : SysReg<"trace", 0x7D0>;
 def STACKLIMIT : SysReg<"stacklimit", 0x7D1>;
+def MHPM_VALID : SysReg<"mhpm_valid", 0x7D2>;
+def MHPMH_VALID : SysReg<"mhpmh_valid", 0x7D3>;
+def DMR_STS : SysReg<"dmr_sts", 0x7D4>;
 }
